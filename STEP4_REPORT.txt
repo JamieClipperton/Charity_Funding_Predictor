@@ -11,7 +11,7 @@ Results: Using bulleted lists and images to support your answers, address the fo
 Data Preprocessing
 
 What variable(s) are considered the target(s) for your model? "IS_SUCCESSFUL"
-What variable(s) are considered to be the features for your model?
+What variable(s) are considered to be the features for your model? "INCOME_AMT" AND "ASK_AMT"
 What variable(s) are neither targets nor features, and should be removed from the input data? "EIN" AND "NAME"
 
 
