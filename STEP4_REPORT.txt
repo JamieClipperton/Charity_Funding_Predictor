@@ -6,8 +6,6 @@ Overview of the analysis: Explain the purpose of this analysis.
 
 Results: Using bulleted lists and images to support your answers, address the following questions.
 
-
-
 Data Preprocessing
 
 What variable(s) are considered the target(s) for your model? "IS_SUCCESSFUL"
@@ -18,12 +16,30 @@ What variable(s) are neither targets nor features, and should be removed from th
 Compiling, Training, and Evaluating the Model
 
 How many neurons, layers, and activation functions did you select for your neural network model, and why?
-Were you able to achieve the target model performance?
-What steps did you take to try and increase model performance?
+
+First Attempt: Used neural network model with 2 hidden layers applied. First hidden layer with 9 nodes and second hidden layer with 25 nodes, using 100 epochs.
+First Attempt resulted in a Loss of 0.5546 and Accuracy of 0.7240 (72%), does not hit target accuracy of 75%.
+
+Second Attempt: Used neural network model with 3 hidden layers this attempt. First hidden layer with 80 nodes, second hidden layer with 60 nodes, and third hidden layer with 40 nodes. Used 100 epochs. 
+Second Attempt resulted in a Loss of 0.587 and Accuracy of 0.7257 (73%), does not hit target accuracy of 75% but a little closer then first attempt. 
+
+Third Attempt: Used neural network model with 4 hidden layers this attempt. First hidden layer with 150 nodes, second hidden layer with 75 nodes, third hidden layer with 50, and fourther hidden layer with 25 
+nodes. Used 100 epochs. 
+Third Attempt resulted in a Loss of 0.5774 and Accuracy of 0.7254 (73%), 3 layers was closer then adding a 4th layer to the 75% target accuracy rate. 
+
+Fourth Attempt: Went back to using neural network with only 3 hidden layers this attempt. First hidden layer with 50 nodes, second hidden layer with 30 nodes, and third hidden layer with 10 nodes, using 100 
+epochs. 
+Fourth Attempt resulted in a Loss of 0.5695 and Accuracy of 0.7263 (73%), did not hit the 75% target accuracy rate but fourth attempt came the closest out of all attempts. 
+
+Were you able to achieve the target model performance? I was not able to achieve the 75% target. 
+
+What steps did you take to try and increase model performance? I increased number of hidden layers on each attempt, and changed the number of nodes.
 
 
 
+Summary: 
 
-
-Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
+The results of each of my attempts did not reach the target accuracy rate of 75%. Increasing the number of layers did not improve accuracy as third attempt with four hidden layers returned a decreased 
+accuracy rate compared to results from attempts two and four with three hidden layers. My recommendation would be to apply some feature reduction techniques to reduce the number of features applied, and 
+adjusting the hyperparameters to get closer to the 75% desired accuracy rate.  
 
